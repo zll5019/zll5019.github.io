@@ -286,41 +286,41 @@
 </li>
 <li><p>斜体加粗：文字左右分别用三个星<code>*</code>号包起来；<br>示例：</p>
 <a id="more"></a>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗文字**</span><br><span class="line">*这是倾斜文字*</span><br><span class="line">***这是倾斜加粗文字***</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*<span class="strong">*这是加粗文字*</span><span class="strong">*</span></span><br><span class="line"><span class="strong">*</span>这是倾斜文字<span class="strong">*</span></span><br><span class="line"><span class="strong">*</span>*<span class="strong">*这是倾斜加粗文字*</span>*<span class="strong">*</span></span><br></pre></td></tr></table></figure>
 
 <p>效果如下：<br> <strong>这是加粗文字</strong><br> <em>这是倾斜文字</em><br> <strong><em>这是倾斜加粗文字</em></strong></p>
 </li>
 </ul>
-<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><p> 在引用的文字前加<code>&gt;</code>即可<br> 示例：<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br></pre></td></tr></table></figure></p>
+<h3 id="二、引用"><a href="#二、引用" class="headerlink" title="二、引用"></a>二、引用</h3><p> 在引用的文字前加<code>&gt;</code>即可<br> 示例：<br> <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;</span><span class="bash">这是引用的内容</span></span><br></pre></td></tr></table></figure></p>
 <p> 效果如下：</p>
 <blockquote>
 <p>这是引用的内容</p>
 </blockquote>
 <h3 id="三、图片"><a href="#三、图片" class="headerlink" title="三、图片"></a>三、图片</h3><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &quot;图片title&quot;)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title就是图片的标题，当鼠标移到图片上时显示的内容。</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">图片alt</span>](<span class="link">图片地址 "图片title"</span>)</span><br><span class="line"></span><br><span class="line">图片alt就是显示在图片下面的文字，相当于对图片内容的解释。</span><br><span class="line">图片title就是图片的标题，当鼠标移到图片上时显示的内容。</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![头像](header.jpg &quot;溴麝香草酚蓝&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">头像</span>](<span class="link">header.jpg "溴麝香草酚蓝"</span>)</span><br></pre></td></tr></table></figure>
 
 <h3 id="四、超链接"><a href="#四、超链接" class="headerlink" title="四、超链接"></a>四、超链接</h3><p>语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[超链接名](超链接地址 &quot;超链接title&quot;)</span><br><span class="line">超链接title可不加</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">超链接名</span>](<span class="link">超链接地址 "超链接title"</span>)</span><br><span class="line">超链接title可不加</span><br></pre></td></tr></table></figure>
 
 <p>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[我的博客](https://zhanglilong.fun &quot;Lilong Zhang&quot;)</span><br><span class="line">[bilibili主页](https://space.bilibili.com/171945798 &quot;我的b站&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">我的博客</span>](<span class="link">https://zhanglilong.fun "Lilong Zhang"</span>)</span><br><span class="line">[<span class="string">bilibili主页</span>](<span class="link">https://space.bilibili.com/171945798 "我的b站"</span>)</span><br></pre></td></tr></table></figure>
 
 <p>效果：<br><a href="https://zhanglilong.fun" title="Lilong Zhang">我的博客</a><br><a href="https://space.bilibili.com/171945798" title="我的b站" target="_blank" rel="noopener">bilibili主页</a></p>
 <h3 id="五、代码"><a href="#五、代码" class="headerlink" title="五、代码"></a>五、代码</h3><p>语法：</p>
 <ul>
 <li><p>单行代码：代码之间分别用一个反引号包起来</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`代码内容`</span><br></pre></td></tr></table></figure>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`代码内容`</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> (```)</span><br><span class="line"> class TestClass &#123;</span><br><span class="line">    public static void main(String args[] ) throws Exception &#123;</span><br><span class="line">        System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"> (```)</span><br><span class="line"> <span class="keyword">class</span> <span class="title">TestClass</span> &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span>(<span class="params">String args[] </span>) throws Exception</span> &#123;</span><br><span class="line">        System.<span class="keyword">out</span>.println(<span class="string">"Hello World!"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">(```)</span><br></pre></td></tr></table></figure>
 
 </li>
 </ul>
 <h3 id="六、分割线"><a href="#六、分割线" class="headerlink" title="六、分割线"></a>六、分割线</h3><p>三个或三个以上的<code>-</code>或者<code>*</code>都可以<br>示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">-----</span><br><span class="line">***</span><br><span class="line">*****</span><br></pre></td></tr></table></figure>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">-----</span><br><span class="line">**<span class="strong">*</span></span><br><span class="line"><span class="strong">*</span>***<span class="strong">*</span></span><br></pre></td></tr></table></figure>
     </div>
 
     
