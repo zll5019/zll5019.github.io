@@ -10,11 +10,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate">
     <meta name="keywords" content="Lilong Zhang,"> 
-    <meta name="description" content="
-
-function doDecrypt (pwd, onError) {
-	console.log(&#39;in doDecrypt&#39;);
-	const txt = document.getElemen,"> 
+    <meta name="description" content="U2FsdGVkX1+fRm39qIIqbwuvIlaOslZQCCuvWBfCFi2e6zbdOrzvdsqOk0/PFXZO0Ya7rMcJbP4jxU49+cba9O1VL4RAG44z0NG,"> 
     <meta name="author" content="溴麝香草酚蓝"> 
     <link rel="alternative" href="atom.xml" title="Lilong Zhang" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -66,46 +62,7 @@ function doDecrypt (pwd, onError) {
 
         </div>
         <div class="content markdown">
-            <script src=/js/crypto-js.js></script>
-<script>
-function doDecrypt (pwd, onError) {
-	console.log('in doDecrypt');
-	const txt = document.getElementById('enc_content').innerHTML;
-	let plantext;
-	try {
-		const bytes = CryptoJS.AES.decrypt(txt, pwd);
-		var plaintext = bytes.toString(CryptoJS.enc.Utf8);
-	} catch(err) {
-		if(onError) {
-			onError(err);
-		}
-		return;
-	}
-	document.getElementById('enc_content').innerHTML = plaintext;
-	document.getElementById('enc_content').style.display = 'block';
-	document.getElementById('enc_passwd').style.display = 'none';
-	if(typeof MathJax !== 'undefined') {
-		MathJax.Hub.Queue(
-			['resetEquationNumbers', MathJax.InputJax.TeX],
-			['PreProcess', MathJax.Hub],
-			['Reprocess', MathJax.Hub]
-		);
-	}
-}
-</script>
-<div id="enc_content" style="display:none">U2FsdGVkX19bBUw9YixSn58+sC7/u/vgx3iSWG6egviaAw/0LZUA6VF6J+bNfUhSMmSK9mpEpXf023ptw62lWw==</div>
-<div id="enc_passwd"> <input id="enc_pwd_input" type="password" style="border-radius: 5px;border-style: groove;height: 30px;width: 50%;cursor: auto;font-size: 102%;color: currentColor;outline: none;text-overflow: initial;padding-left: 5px;" onkeydown="if (event.keyCode == 13) { decrypt(); return false;}"> <input type="submit" value="确&nbsp;定" onclick="decrypt()" style="width: 58px;height: 34px;border-radius: 5px;background-color: white;border-style: solid;color: currentColor;"><div id="enc_error" style="display: inline-block;color: #d84527;margin-left: 10px"></div>
-<script>
-var onError = function(error) {
-	document.getElementById("enc_error").innerHTML = "Error!"
-};
-function decrypt() {
-var passwd = document.getElementById("enc_pwd_input").value;
-console.log(passwd);
-doDecrypt(passwd, onError);
-}
-</script>
-</div>
+            <div id="enc_content">U2FsdGVkX1+fRm39qIIqbwuvIlaOslZQCCuvWBfCFi2e6zbdOrzvdsqOk0/PFXZO0Ya7rMcJbP4jxU49+cba9O1VL4RAG44z0NGgQerWIcgLxJdDW8kBNDcgj6Ox7smRBLkcS9Y7EYWH6s78rwveMkbXpqSjv/WJxa00Xjbb7BlRFAdCPDdrdaTKehZU51qAr/pOtpX6R7VNik96ypy6qQ==</div><script src="/js/crypto-js.js"></script><script>var pwd = window.prompt("please input password","");var txt = document.getElementById("enc_content").innerHTML;var bytes  = CryptoJS.AES.decrypt(txt, pwd);var plaintext = bytes.toString(CryptoJS.enc.Utf8);document.getElementById("enc_content").innerHTML = plaintext</script>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="https://link.hhtjim.com/163/573168813.mp3">
